@@ -1,0 +1,5 @@
+Mellim Admin Panel yalniz admine gorsenir ve Admin olaraq girmey ucun
+
+Username:fero_123
+Parol:Ferid2001
+
