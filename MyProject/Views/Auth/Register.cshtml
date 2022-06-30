@@ -1,0 +1,51 @@
+﻿@using MyProject.ViewModels
+@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container"style="background-color: #c5c5c5;">
+    <div class="row" style="margin-top:9rem">
+        <div class="col-lg-12" style="margin:50px;text-align:center">
+            <h1>Register</h1>
+        </div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <form method="post">
+                <div class="mb-3">
+                    <input asp-for="Firstname" class="form-control" placeholder="Firstname">
+                    <span asp-validation-for="Firstname"></span>
+                </div>
+                <div class="mb-3">
+                    <input asp-for="Lastname" class="form-control" placeholder="Lastname">
+                    <span asp-validation-for="Lastname"></span>
+                </div>
+                <div class="mb-3">
+                    <input asp-for="Username" class="form-control" placeholder="Username">
+                    <span asp-validation-for="Username"></span>
+                </div>
+                <div class="mb-3">
+                    <input asp-for="Email" class="form-control" placeholder="Email">
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="mb-3">
+                    <input asp-for="Password" class="form-control" placeholder="Password">
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="mb-3">
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="ConfirmPassword">
+                    <span asp-validation-for="ConfirmPassword"></span>
+                </div>
+                <div class="mb-3">
+                    <div asp-validation-summary="ModelOnly"></div>
+                </div>
+                <div class="mb-3">
+                    <a asp-action="Login" style="text-decoration:none">Have Your account?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+        <div class="col-lg-3"></div>
+
+    </div>
+</div>
